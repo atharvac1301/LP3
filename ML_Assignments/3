@@ -1,9 +1,0 @@
-Requirement already satisfied: threadpoolctl in c:\users\dell\anaconda3\lib\site-packages (2.2.0)
-Collecting threadpoolctl
-  Using cached threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
-Installing collected packages: threadpoolctl
-  Attempting uninstall: threadpoolctl
-    Found existing installation: threadpoolctl 2.2.0
-    Uninstalling threadpoolctl-2.2.0:
-      Successfully uninstalled threadpoolctl-2.2.0
-Successfully installed threadpoolctl-3.5.0
