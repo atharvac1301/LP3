@@ -1,6 +1,6 @@
 # Huffman Encoding
 
-from heapq import heapify, heappop, heappush
+from heapq import heappop, heappush
 
 class Node:
     def __init__(self, freq, char, left=None, right=None):
@@ -27,16 +27,16 @@ def printNodes(node, val=''):
         print(f"{node.char} -> {new_val}")
 
 chars = ['a', 'b', 'c', 'd', 'e', 'f'] 
-freq = [5, 9, 12, 13, 16, 45] 
+freq = [50, 10, 30, 5, 3, 2] 
 
 nodes = []
 
 # converting characters and frequencies into huffman tree nodes 
-for x in range(len(chars)): 
-    heappush(nodes, Node(freq[x], chars[x])) 
+for i in range(len(chars)): 
+    heappush(nodes, Node(freq[i], chars[i])) 
   
+
 while len(nodes) > 1: 
-  
     # sort all the nodes in ascending order based on their frequency 
     left = heappop(nodes) 
     right = heappop(nodes) 
