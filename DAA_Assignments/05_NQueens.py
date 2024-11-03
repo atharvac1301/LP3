@@ -17,11 +17,6 @@ def isSafe(board, row, col):
         if board[i][col] in (1, 2):
             return False
     
-    # Check the entire row
-    for j in range(n):                                      
-        if board[row][j] in (1, 2):
-            return False
-    
     # Check top-left and top-right diagonal
     for k in range(1, row+1):
         if row-k >=0 and col-k >=0 and board[row-k][col-k]:
@@ -30,7 +25,7 @@ def isSafe(board, row, col):
             return False
         
     # Check bottom-left and bottom-right diagonal
-    for k in range(1, n-row-1):
+    for k in range(1, n-row):
         if row+k < n and col-k >=0 and board[row+k][col-k]:
             return False
         if row+k < n and col+k < n and board[row+k][col+k]:
@@ -67,5 +62,5 @@ def solve_n_queens_preplaced(preplaced_row, preplaced_col):
     return found
     '''
 
-R, C = 0, 2
+R, C = 0, 1
 solve_n_queens_preplaced(R, C)
