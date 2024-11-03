@@ -67,6 +67,5 @@ def solve_n_queens_preplaced(preplaced_row, preplaced_col):
     return found
     '''
 
-n = 4
 R, C = 0, 2
 solve_n_queens_preplaced(R, C)

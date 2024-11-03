@@ -1,10 +1,10 @@
-profit = [60, 100, 120]
-weight = [100, 20, 30]
-W = 50
+profit = [5, 4, 8, 6]
+weight = [1, 2, 4, 5]
+W = 5
 n = len(profit)
 
 # t is weight-item matrix
-t = [[-1 for i in range(W+1)] for j in range(n+1)]
+t = [[-1 for j in range(W+1)] for i in range(n+1)]
 
 # Dynamic Programming = Recursion + Memoization
 def knapsack(wt, val, W, n):

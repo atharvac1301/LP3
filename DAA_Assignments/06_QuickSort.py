@@ -1,8 +1,16 @@
 import random
 
-
 def swap(arr, i, j):
     arr[i], arr[j] = arr[j], arr[i]
+
+'''
+All elements to the left of pivot are less than it and all elements to the
+right of it are greater. This means that pivot element is on the correct position 
+in the array.
+
+Partition returns the index of the pivot element after putting/swapping it to its
+correct position (i + 1).
+'''
 
 # Deterministic Quicksort
 def partition(arr, low, high):
