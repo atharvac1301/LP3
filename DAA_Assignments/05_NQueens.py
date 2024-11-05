@@ -1,3 +1,8 @@
+'''
+Time Complexity = O(N!)
+Space Complexity = O(N^2)
+'''
+
 global n
 n=4
 

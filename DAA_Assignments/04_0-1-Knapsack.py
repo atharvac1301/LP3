@@ -1,3 +1,8 @@
+'''
+Time and Space Complexity = O(n*W), n*W = dimensions of the Table, 
+n = no. of items, W = capacity of Knapsack 
+'''
+
 profit = [5, 4, 8, 6]
 weight = [1, 2, 4, 5]
 W = 5

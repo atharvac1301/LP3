@@ -1,5 +1,10 @@
 # Huffman Encoding
 
+'''
+Time Complexity = O(nlogn)
+Space Complexity = O(n)
+'''
+
 from heapq import heappop, heappush
 
 class Node:
