@@ -3,6 +3,7 @@
 '''
 Time Complexity = O(nlogn)
 Space Complexity = O(n)
+We use min heap in the code
 '''
 
 from heapq import heappop, heappush
